@@ -1,0 +1,86 @@
+@import "../settings/colors";
+
+.bgblock{
+	padding: 120px 20px;
+	position: relative;
+	background: linear-gradient(180deg, #2D4257 0%, rgba(249, 250, 250, 0) 100%);
+	@media( max-width: 767px) {
+		padding: 40px 15px;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-color: $greyblue-80;
+	}
+	h1, h3, h4{
+		color: $white;
+	}
+	.btn{
+		text-transform: uppercase;
+	}
+	&.bgblock--top{
+		margin-top: 90px;
+		@media( max-width: 992px) {
+			margin-top: 60px;
+		}
+	}
+	&.bgblock--alt{
+		padding: 105px 20px;
+		@media( max-width: 767px) {
+			padding: 40px 15px;
+		}
+		&:after{
+			background-image: url('../img/bg-tire.png');
+		}
+	}
+	&.bgblock--big{
+		padding: 130px 20px 190px;
+		@media( max-width: 767px) {
+			padding: 40px 15px;
+		}
+		&:after{
+		}
+	}
+	&.bgblock--bigger{
+		padding: 130px 20px 600px;
+		@media( max-width: 767px) {
+			padding: 40px 15px;
+		}
+		&:after{
+		}
+	}
+	&.bgblock--stage{
+		padding: 130px 20px 420px;
+		@media( max-width: 767px) {
+			padding: 40px 15px;
+		}
+		&:after{
+			background-image: url('../img/bg-stage.png');
+		}
+	}
+	&.bgblock--clientes{
+		&:after{
+			background-image: url('../img/bg-clientes.png');
+		}
+	}
+	&.bgblock--nosotros{
+		&:after{
+			background-image: url('../img/bg-nosotros.png');
+		}
+	}
+	&.bgblock--contacto{
+		&:after{
+			background-image: url('../img/bg-contacto.png');
+		}
+	}
+
+}

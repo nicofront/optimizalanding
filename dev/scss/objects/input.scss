@@ -1,0 +1,14 @@
+@import "../settings/colors";
+
+.input{
+	border: 1px solid #D1D0C7;
+	padding: 13px 15px;
+	background-color: #F2F0E9;
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	line-height: 20px;
+	&:focus {
+	    outline: 0;
+	}
+}

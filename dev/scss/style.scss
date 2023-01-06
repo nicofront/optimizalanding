@@ -1,0 +1,27 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "settings/fonts";
+@import "settings/utility";
+
+//scripts
+@import "scripts/slick";
+@import "scripts/slick-theme";
+
+//componentes
+@import "components/modal";
+@import "components/head";
+@import "components/footer";
+@import "components/formulario";
+@import "components/bgblock";
+@import "components/bars";
+@import "components/videoplayer";
+
+//objetos
+@import "objects/form";
+@import "objects/button";
+@import "objects/txt";
+@import "objects/accordion";
+@import "objects/stepper";
+@import "objects/slider";
+
+//secciones
+@import "sections/index";

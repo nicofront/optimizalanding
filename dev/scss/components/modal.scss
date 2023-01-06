@@ -1,0 +1,169 @@
+@import "../settings/colors";
+
+.modal {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    overflow: scroll;
+    display: none;
+    .modal__layer {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 37, 41, 0.3);
+        z-index: 101;
+    }
+    .modal__box {
+        background-color: #fff;
+        width: 560px;
+        max-width: 100%;
+        top: 40px;
+        left: 50%;
+        border-radius: 8px;
+        transform: translate(-50%, 0);
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+        position: absolute;
+        z-index: 102;
+        display: none;
+        &.modal__box--small {
+            width: 500px;
+        }
+        &.modal__box--active {
+            display: inline-block;
+        }
+        .modal__box__head {
+            padding: 60px 40px 20px;
+            padding-right: 40px;
+            position: relative;
+            text-align: center;
+            .modal__close {
+                position: absolute;
+                display: inline-block;
+                background-size: 24px 22px;
+                width: 24px;
+                height: 25px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url('../img/icon-close.png');
+                right: 30px;
+                top: 30px;
+            }
+        }
+        .modal__box__body {
+            padding: 20px 40px;
+            padding-bottom: 40px;
+            p {
+                color: #252525;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .txt {
+                &.txt--paragraph {
+                    font-size: 16px;
+                }
+                &.txt--small {
+                    font-size: 14px;
+                }
+            }
+            &.modal__box__body--scroll {
+                max-height: 350px;
+                min-height: 350px;
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    width: 4px;
+                    background-color: #fff;
+                    scroll-padding-top: 15px;
+                    padding: 15px 15px 15px 0;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #666;
+                    height: 100px;
+                    border-radius: 4px;
+                }
+            }
+        }
+        .modal__box__footer {
+            padding: 20px 40px;
+            @media (max-width: 768px) {
+                padding: 20px;
+                .col-md-12 {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+        @media screen and (max-width: 767px) {
+            .modal__box__head {
+                font-size: 23px;
+                line-height: 26px;
+            }
+            .modal__box__body {
+                padding: 20px;
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .modal__table {
+        display: table;
+        width: 100%;
+        .tr {
+            display: table-row;
+            .td,
+            .th {
+                display: table-cell;
+                color: #252525;
+                font-size: 16px;
+                line-height: 17.6px;
+                padding: 28px 15px;
+            }
+            .th,
+            .td:first-child {
+            }
+            .td {
+                @media screen and (max-width: 990px) {
+                    display: block;
+                    position: relative;
+                    padding: 10px 10px;
+                    padding-left: 45%;
+                    overflow: hidden;
+                    border: none;
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 35%;
+                        padding: 10px 10px;
+                        white-space: nowrap;
+                        content: attr(data-column);
+                        color: #000;
+                        font-size: 16px;
+                        line-height: 17.6px;
+                    }
+                    &:first-child {
+                        padding-left: 10px;
+                    }
+                }
+            }
+            &:first-child {
+                @media screen and (max-width: 990px) {
+                    display: none;
+                }
+            }
+            &:nth-child(2n) {
+                .td {
+                    background-color: #F2F0E9;
+                }
+            }
+        }
+    }
+}

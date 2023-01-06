@@ -1,0 +1,13 @@
+.index{
+    a {
+        font-size: 16px;
+        color: #252525;
+        text-decoration: underline;
+    }
+    a.focus,
+    a:focus,
+    a:hover {
+        color: #e65400;
+        text-decoration: none;
+    }
+}

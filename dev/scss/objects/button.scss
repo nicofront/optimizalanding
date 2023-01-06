@@ -1,0 +1,127 @@
+@import "../settings/colors";
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: $black;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 13px 21px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    @media (max-width:767px) {
+        width: 100%;
+        display: block;
+    }
+    @media (max-width:450px) {
+        padding: 13px 10px;
+    }
+    &:focus, &:active{
+        outline: 0;
+        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    }
+    span{
+        display: inline-block;
+    }
+    &.btn--big {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    &.btn--compacted{
+        padding: 9px 21px;
+    }
+    &.btn--primary{
+        color: $white;
+        background-color: $purple;
+        border-color: $purple;
+        &.focus,
+        &:focus,
+        &:hover {
+            background-color: $purple-hover;
+        }
+        &:disabled,
+        &.btn--disabled {
+            color: $neutro-50;
+            background-color: $disabled;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-color: transparent;
+            pointer-events: none;
+        }
+    }
+    &.btn--secondary{
+        background-color: $darkpurple;
+        border-color: $darkpurple;
+        color: $white;
+    }
+    &.btn--third{
+        background-color: $lightblue-80;
+        border-color: $lightblue-80;
+        color: $white;
+    }
+    &.btn--fourth{
+        background-color: $greyblue-50;
+        border-color: $greyblue-50;
+        color: $white;
+    }
+    &.btn--outline{
+        background-color: $white;
+        color: $dark;
+        &.focus,
+        &:focus,
+        &:hover {
+            background-color: $disabled;
+        }
+        &:disabled,
+        &.btn--disabled {
+            color: $neutro-50;
+            background-color: $disabled;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-color: transparent;
+            pointer-events: none;
+        }
+    }
+    &.btn--link{
+        color: #343A40;
+        background-color: $white;
+        border-color: $white;
+        padding-top: 0;
+        padding-bottom: 0;
+        span{
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+    }
+    &.btn--icon{
+        span{
+            padding-right: 25px;
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 16px 16px;
+            background-image: url('../img/icon-right.png');
+        }
+        &.btn--icon--left{
+            span{
+                padding-right: 0;
+                padding-left: 25px;
+                background-position: left center;
+            }
+        }
+        &.btn--icon--plus{
+            span{
+                background-image: url('../img/icon-plus.png');
+            }
+        }
+        &.btn--icon--loader{
+            span{
+                background-image: url('../img/loader2.gif');
+            }
+        }
+    }
+}

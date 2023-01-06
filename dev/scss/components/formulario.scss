@@ -1,0 +1,40 @@
+@import "../settings/colors";
+
+.formulario{
+	background-color: $grey;
+	padding: 100px 20px 130px;
+	.text-5xl, .slider__demo .text-4xl,.text-3xl, .text-2xl{
+		color: $greyblue-100;
+	}
+	.text-4xl{
+		color: $darkblue-100;
+	}
+	.btn{
+		text-transform: uppercase;
+	}
+	&.formulario--bg{
+		background-repeat: no-repeat;
+		background-position: left 80px;
+		background-size: 490px;
+		background-image: url('../img/formulario-bg.png');
+	}
+	.formulario__control{
+		padding-left: 0;
+		display: inline-block;
+		li{
+			display: inline-block;
+			margin-right: 20px;
+			margin-left: 20px;
+			@media( max-width: 767px) {
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			&:first-child{
+				margin-left: 0;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+@import "../settings/colors";
+
+.stepper{
+	display: inline-block;
+	ul{
+		padding-left: 0;
+		li{
+			display: inline-block;
+			margin: 0 20px 40px;
+			&:first-child{
+				margin-left: 0;
+			}
+			&:last-child{
+				margin-right: 0;
+				margin-bottom: 0;
+			}
+			.stepper__item{
+				text-align: center;
+				width: 69px;
+				font-size: 20px;
+				line-height: 67px;
+				display: inline-block;
+				color: $greyblue-50;
+				border: 1px solid $greyblue-50;
+				background-color: $white;
+				border-radius: 50%;
+				-ms-transition: .5s;
+				-moz-transition: .5s;
+				-webkit-transition: .5s;
+				-o-transition: .5s;
+				transition: .5s;
+				@media screen and (max-width: 767px) {
+					font-size: 16px;
+					width: 40px;
+					line-height: 38px;
+				}
+			}
+			&.stepper__current{
+				.stepper__item{
+					color: $lightblue-80;
+					border-color: $lightblue-80;
+				}
+			}
+		}
+
+	}
+}

@@ -1,0 +1,89 @@
+@import "../settings/colors";
+
+.footer{
+	padding: 50px 0 120px;
+	background-color: $greyblue-80;
+	background-position: right center;
+	background-repeat: no-repeat;
+	.footer__logo{
+		width: 250px;
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
+	h3{
+		color: $white;
+		margin-bottom: 15px;
+	}
+	ul{
+		padding-left: 0;
+		margin-bottom: 30px;
+		li{
+			list-style: none;
+			margin-bottom: 14px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			a{
+				display: inline-block;
+				color: $white;
+				&.text.text-sm{
+					line-height: 20px;
+				}
+			}
+		}
+		&.footer__countries{
+			li{
+				padding-left: 30px;
+				position: relative;
+				&:after{
+					content: '';
+					width: 20px;
+					height: 20px;
+					display: inline-block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					border-radius: 50%;
+					background-color: $black;
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: cover;
+				}
+				&:nth-child(1){
+					&:after{
+						background-image: url('../img/icon-cl.png');
+					}
+				}
+				&:nth-child(2){
+					&:after{
+						background-image: url('../img/icon-mx.png');
+					}
+				}
+			}
+		}
+		&.footer__network{
+			li{
+				margin-right: 20px;
+				display: inline-block;
+				a{
+					width: 47px;
+					height: 47px;
+					border-radius: 50%;
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: cover;
+				}
+				&:nth-child(1){
+					a{
+						background-image: url('../img/icon-ln.png');
+					}
+				}
+				&:nth-child(2){
+					a{
+						background-image: url('../img/icon-yt.png');
+					}
+				}
+			}
+		}
+	}
+}

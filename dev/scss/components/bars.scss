@@ -1,0 +1,44 @@
+.bars{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	.bars__item{
+		text-align: center;
+		height: 520px;
+		width: 120px;
+		padding-top: 20px;
+		position: relative;
+		.bars__icon{
+			width: 55px;
+			height: 55px;
+			border-radius: 100%;
+			display: inline-block;
+			background-color: grey;
+			cursor: pointer;
+		}
+		.bars__column{
+			display: block;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 100px;
+			background-color: grey;
+			&.active{
+				height: 360px;
+			}
+			.bars__column__head{
+				display: inline-block;
+				width: 120px;
+				height: 120px;
+				border-radius: 100%;
+				background-color: #fff;
+				position: absolute;
+				outline: solid 12px grey;
+				outline-offset: -12px;
+				top: 0;
+				left: 0;
+				transform: translate(0,-50%);
+			}
+		}
+	}
+}
