@@ -40,5 +40,29 @@
 				transform: translate(0,-50%);
 			}
 		}
+		&.bars__item--yellow{
+			.bars__icon, .bars__column{ background-color: #ebb359; }
+			.bars__column__head{ outline-color: #ebb359;  }
+		}
+		&.bars__item--orange{
+			.bars__icon, .bars__column{ background-color: #d96017; }
+			.bars__column__head{ outline-color: #d96017;  }
+		}
+		&.bars__item--red{
+			.bars__icon, .bars__column{ background-color: #bf2d67; }
+			.bars__column__head{ outline-color: #bf2d67;  }
+		}
+		&.bars__item--sky{
+			.bars__icon, .bars__column{ background-color: #79bff3; }
+			.bars__column__head{ outline-color: #79bff3;  }
+		}
+		&.bars__item--violet{
+			.bars__icon, .bars__column{ background-color: #8a88d8; }
+			.bars__column__head{ outline-color: #8a88d8;  }
+		}
+		&.bars__item--emerald{
+			.bars__icon, .bars__column{ background-color: #7fcda5; }
+			.bars__column__head{ outline-color: #7fcda5;  }
+		}
 	}
 }

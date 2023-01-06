@@ -5,6 +5,9 @@
     &.text---medium, .text--medium{
         font-weight: 500;
     }
+    &.text---semibold, .text--semibold{
+        font-weight: 600;
+    }
     &.text--bold, strong{
         font-weight: 700;
     }
@@ -77,5 +80,8 @@
         line-height: 12px;
         @media( max-width: 767px) {
         }
+    }
+    &.text-ls10{
+        letter-spacing: 10px;
     }
 }
