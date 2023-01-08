@@ -23,6 +23,12 @@ $(document).ready(function() {
     },function(){
         $(this).next().removeClass('active');
     });
+    $('.bars__column').hover(function(){
+        $(this).addClass('active');
+    },function(){
+        $(this).removeClass('active');
+    });
+
 
     $(window).resize(function() {
       if(window.innerWidth > 991){

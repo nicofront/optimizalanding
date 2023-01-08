@@ -9,101 +9,18 @@
 	width: 100%;
 	top: 0;
 	left: 0;
+	box-shadow: 0 4px 8px rgba(0,0,0,.15);
 	@media( max-width: 991px) {
-		padding: 20px 0 15px;
+		padding: 15px 0 15px;
 	}
 	.header__logo{
 		display: inline-block;
-		// margin-top: 30px;
 		img{
 			width: 205px;
 			max-width: 100%;
 		}
 		@media( max-width: 991px) {
 			margin-top: 0;
-			padding-bottom: 10px;
-		}
-	}
-	.header__switch{
-		display: inline-block;
-		position: absolute;
-		top: 8px;
-		right: 15px;
-		width: 28px;
-		height: 28px;
-		background-repeat: no-repeat;
-		background-size: 28px 28px;
-		background-position: center;
-		background-image: url('../img/icon-menu.png');
-	}
-	.header__menu{
-		display: table;
-		width: 100%;
-		font-size: 0;
-		@media( max-width: 991px) {
-			display: none;
-		}
-		.header__tr{
-			display: table-row;
-			@media( max-width: 991px) {
-				display: block;
-			}
-			.header__td{
-				display: table-cell;
-				width: 20%;
-				text-align: center;
-				@media( max-width: 991px) {
-					display: block;
-					width: 100%;
-					text-align: left;
-				}
-				&:last-child{
-					display: none;
-					@media( max-width: 991px) {
-						display: block;
-						a{
-							border-bottom: none;
-						}
-					}
-				}
-				a{
-					display: block;
-					color: $white;
-					text-transform: uppercase;
-					padding: 4px 0;
-					position: relative;
-					&:after{
-						content: '';
-						position: absolute;
-						top: 100%;
-						left: 50%;
-						transform: translate(-50%, 0);
-						display: inline-block;
-						width: 74px;
-						height: 0px;
-						margin-top: 6px;
-						-ms-transition: .5s;
-						-moz-transition: .5s;
-						-webkit-transition: .5s;
-						-o-transition: .5s;
-						transition: .5s;
-						background-color: $yellow-70;
-					}
-					&:hover, &.active{
-						text-decoration: none;
-						&:after{
-							height: 3px;
-						}
-					}
-					@media( max-width: 991px) {
-						padding: 15px 0;
-						border-bottom: 2px solid $white;
-						&:after{
-							display: none;
-						}
-					}
-				}
-			}
 		}
 	}
 	.header__demo{
