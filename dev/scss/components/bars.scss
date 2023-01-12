@@ -6,7 +6,7 @@
 		text-align: center;
 		height: 600px;
 		width: 160px;
-		padding-top: 40px;
+		padding-top: 50px;
 		position: relative;
 		overflow: hidden;
 		.bars__icon{
@@ -16,6 +16,9 @@
 			display: inline-block;
 			background-color: grey;
 			cursor: pointer;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 60px;
 		}
 		.bars__column{
 			display: block;
@@ -61,31 +64,42 @@
 		&.bars__item--yellow{
 			.bars__icon, .bars__column{ background-color: #ebb359; }
 			.bars__column__head{ outline-color: #ebb359; color: #ebb359;  }
+			.bars__icon{ background-image: url('../img/icon-money.png'); }
 		}
 		&.bars__item--orange{
 			.bars__icon, .bars__column{ background-color: #d96017; }
 			.bars__column__head{ outline-color: #d96017; color: #d96017;  }
+			.bars__icon{ background-image: url('../img/icon-rocket.png'); }
 		}
 		&.bars__item--red{
 			.bars__icon, .bars__column{ background-color: #bf2d67; }
 			.bars__column__head{ outline-color: #bf2d67; color: #bf2d67;  }
+			.bars__icon{ background-image: url('../img/icon-user.png'); }
 		}
 		&.bars__item--sky{
 			.bars__icon, .bars__column{ background-color: #79bff3; }
 			.bars__column__head{ outline-color: #79bff3; color: #79bff3; }
+			.bars__icon{ background-image: url('../img/icon-bulb.png'); }
 		}
 		&.bars__item--violet{
 			.bars__icon, .bars__column{ background-color: #8a88d8; }
 			.bars__column__head{ outline-color: #8a88d8; color: #8a88d8;  }
+			.bars__icon{ background-image: url('../img/icon-pie.png'); }
 		}
 		&.bars__item--emerald{
 			.bars__icon, .bars__column{ background-color: #7fcda5; }
 			.bars__column__head{ outline-color: #7fcda5; color: #7fcda5;  }
+			.bars__icon{ background-image: url('../img/icon-bars.png'); }
 		}
 	}
 }
 
 .bars__wrapper{
+	.bars__title{
+		h2{
+			color: #fff;
+		}
+	}
 	.container{
 		@media( max-width: 1200px) {
 			max-width: 100%;
