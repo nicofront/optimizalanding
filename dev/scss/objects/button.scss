@@ -59,6 +59,11 @@
         background-color: $darkpurple;
         border-color: $darkpurple;
         color: $white;
+        transition: 0.5s linear;
+        &:hover{
+            background-color: $violet;
+            border-color: $violet;
+        }
     }
     &.btn--third{
         background-color: $lightblue-80;
