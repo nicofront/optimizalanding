@@ -1,11 +1,11 @@
 @import "../settings/colors";
 
 .bgblock{
-	padding: 120px 20px;
+	padding: 180px 20px 90px;
 	position: relative;
 	background: linear-gradient(180deg, #2D4257 0%, rgba(249, 250, 250, 0) 100%);
 	@media( max-width: 767px) {
-		padding: 40px 15px;
+		padding: 60px 0px;
 	}
 	&:after{
 		content: '';
@@ -19,7 +19,13 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-		background-color: $greyblue-80;
+		// background-color: $greyblue-80;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#79ddfa+0,5e6cae+65,584a94+100 */
+		background: rgb(121,221,250); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(121,221,250,1) 0%, rgba(94,108,174,1) 65%, rgba(88,74,148,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(121,221,250,1) 0%,rgba(94,108,174,1) 65%,rgba(88,74,148,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(121,221,250,1) 0%,rgba(94,108,174,1) 65%,rgba(88,74,148,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79ddfa', endColorstr='#584a94',GradientType=0 ); /* IE6-9 */
 	}
 	h1, h3, h4{
 		color: $white;
@@ -82,5 +88,20 @@
 			background-image: url('../img/bg-contacto.png');
 		}
 	}
-
+	.svg-container{ 
+		margin: 0 auto;
+		display: inline-block; 
+		width: 100%;
+		vertical-align: middle; 
+		overflow: hidden; 
+		position: absolute;
+		top: 100%;
+		left: 0;
+		path {
+		    fill: url(#hgradient);
+		}
+		@media( max-width: 767px) {
+			display: none;
+		}
+	}
 }
