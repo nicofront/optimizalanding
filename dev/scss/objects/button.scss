@@ -75,6 +75,15 @@
         border-color: $greyblue-50;
         color: $white;
     }
+    &.btn--fifth{
+        background-color: $blue;
+        border: $blue;
+        color: $white;
+        &:hover{
+            background-color: $violet;
+            border-color: $violet;
+        }
+    }
     &.btn--outline{
         background-color: $white;
         color: $dark;
