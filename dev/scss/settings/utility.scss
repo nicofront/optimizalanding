@@ -51,6 +51,11 @@ body {
     }
 }
 
+.u-relative{
+    position: relative;
+    z-index: 10;
+}
+
 .u-blank{
     opacity: 0;
     @media screen and (max-width: 768px) {
